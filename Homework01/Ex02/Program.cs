@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿int start = 2;
+int n = 13;
+
+while (start <= n)
+{
+    Console.Write(start + " ");
+    start += 2;
+    // start = start + 2;
+}
+
+// Сделали на семинаре. Не в зачет.
