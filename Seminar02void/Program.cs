@@ -22,7 +22,7 @@ int[] CreateArray(int size)
 
 void Fill(int[] array)
 {
-    int size = array.Lenght;
+    int size = array.Length;
     int i = 0;
 
     while (i < size)
@@ -44,7 +44,7 @@ void Print(int[] array)
     Console.WriteLine();
 }
 
-void SearchEvenNumbers(int[] array)
+int SearchEvenNumbers(int[] array)
 {
     int count = 0;
     int size = array.Length;
@@ -60,9 +60,9 @@ void SearchEvenNumbers(int[] array)
 return count;
 }
 
-void Final(int[] data, int count)
+int[] Final(int[] data, int count)
 {
-    int evenItems = new int[count];
+    int[] evenItems = new int[count];
     int position = 0;
     int i = 0;
     int size = data.Length;
