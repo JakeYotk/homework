@@ -26,5 +26,5 @@ int[] CreateArray(int size)
 
 void Fill(int[] array)
 {
-    int size
+    int size;
 }
