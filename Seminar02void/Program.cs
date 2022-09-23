@@ -80,10 +80,6 @@ return evenItems;
 }
 
 
-// int lenght = GetIntValue(10, 20);
-// int[] col = CreateArray(lenght);
-// Print(col);
-
 int length = GetIntValue(10, 20);
 int[] col = CreateArray(length);
 Print(col);
