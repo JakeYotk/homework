@@ -5,5 +5,14 @@
 // 918 -> 1
 
 
-string num = 1234.ToString();
-Console.WriteLine(num[1]);
+// string num = 1234.ToString();
+// Console.WriteLine(num[1]);
+
+Console.WriteLine("Введите трехзначное число");
+
+int number = int.Parse(Console.ReadLine());
+
+if ( number > 99 & number < 1000 )
+{
+    Console.WriteLine(number / 10 % 10);
+}
