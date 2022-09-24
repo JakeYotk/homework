@@ -10,3 +10,10 @@
 
 int num = new Random().Next(100, 999);
 Console.WriteLine(num);
+int i = 0;
+int result = num;
+while (i < 1)
+{
+    i++;
+}
+Console.WriteLine(i = 1);
