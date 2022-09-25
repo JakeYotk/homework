@@ -36,7 +36,7 @@ int[] massive = new int[size];
 // while - цикл, который повторяет действие, пока работает
 // заданное в скобках условие.
 int i = 0;
-
+    
 while (i < size)
 {
     massive[i] = new Random().Next(1, 10);
