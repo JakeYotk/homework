@@ -1,12 +1,11 @@
-﻿Console.WriteLine("Введите число");
-
-string number = Console.ReadLine();
-
-if (number.Length > 2)
+﻿Console.WriteLine("Введите планируемое количество чисел:");
+int count = int.Parse(Console.ReadLine());
+int sum = 0;
+for (int i = 0; i < count; i++)
 {
-   Console.WriteLine($"третья цифра - {number[2]}"); 
+Console.WriteLine($"Введите {i + 1}-ое число:");
+int number = int.Parse(Console.ReadLine());
+sum = sum + number;
 }
-else 
-{
-    Console.WriteLine("Третьей цифры нет");
-}
+int average = sum / count;
+Console.WriteLine(average);
