@@ -1,11 +1,27 @@
-﻿Console.WriteLine("Введите планируемое количество чисел:");
-int count = int.Parse(Console.ReadLine());
-int sum = 0;
-for (int i = 0; i < count; i++)
-{
-Console.WriteLine($"Введите {i + 1}-ое число:");
-int number = int.Parse(Console.ReadLine());
-sum = sum + number;
-}
-int average = sum / count;
-Console.WriteLine(average);
+﻿// Пример явного преобрахования одной переменной в другую. 
+
+
+// Если выскакивает сообщение об ошибке неявного преобразования
+// одного типа данных переменной в другой, можно применить явное преобразование.
+// Для этого перед той переменной которую требуется преобразовать,
+// необходимо в скобках указать тот тип даных который мы хотим присвоить
+// этой переменной.
+
+
+// int a;
+// double r = 9;
+// a = (int)r;
+// Console.WriteLine("значение myByte: {0}", a);
+// Console.WriteLine(r);
+
+
+
+// Таблица умножения.
+Console.Clear();
+Console.WriteLine("Введите первое число");
+int a = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите второе число");
+int b = int.Parse(Console.ReadLine());
+int mult;
+mult = a * b;
+Console.WriteLine(mult);
