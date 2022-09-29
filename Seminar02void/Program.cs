@@ -10,6 +10,8 @@
 
 // void - метод не возвращает результат. 
 
+
+
 int GetIntValue(int min, int max)
 {
     return new Random().Next(min, max);

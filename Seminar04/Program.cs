@@ -13,13 +13,15 @@
 // Задача 31 .
 // 1. Создать массив.
 // 2. Заполнить массив элементами от -9 до 9.
-// 3. Найти отрицательные элементы массива и их сумму.
-// 4. Найти положительные элементы массива и их сумму.
+// 3. Распечатать массив.
+// 4. Найти отрицательные элементы массива и их сумму.
+// 5. Найти положительные элементы массива и их сумму.
 
 int[] CreateArray(int size)
 {
     return new int[size];
 }
+
 
 void Fill(int[] array)
 {
@@ -28,36 +30,80 @@ void Fill(int[] array)
 
     while (i < size)
     {
-        array[i] = GetIntValue(-9, 10);
+        array[i] = new Random().Next(-9, 10);
         i++;
     }
 }
 
-int SearchSumMinusNnm(int sum1)
+
+void Print(int[] array)
+{
+    int i = 0;
+    int size = array.Length;
+    while (i < size)
+    {
+        Console.Write(array[i] + " ");
+        i++;
+    }
+    Console.WriteLine();
+}
+
+
+// int SearchSumMinusNum(int sum1, int sum2)
+// {
+//     int sum1 = 0;
+//     int sum2 = 0;
+//     int size = array.Length;
+//     int i = 0;
+//     while (i < size)
+//     {
+//         if (array[i] < 0)
+//         {
+//             sum1 = sum1 + array[i];
+//         }
+//         else
+//         {
+//              sum2 = sum2 + array[i];
+//         }
+//         i++;
+//     }
+//     return;
+// }
+
+
+int SearchSumMinusNum(int[] array)
 {
     int sum1 = 0;
-    int count = 0;
-    int size = array.Length;
     int i = 0;
-    while (i < size)
+    while (i < array.Length)
     {
         if (array[i] < 0)
         {
-            count += 1 ;
+            sum1 = sum1 + array[i];
         }
         i++;
     }
+    return sum1;
+}
 
-    int SearchPlusMinusNnm(int[] array)
+
+int SearchSumPlusNum(int[] array)
 {
-    int count = 0;
-    int size = array.Length;
+    int sum2 = 0;
     int i = 0;
-    while (i < size)
+    while (i < array.Length)
     {
-        if (array[i] % 2 == 0)
+        if (array[i] > 0)
         {
-            count += 1;
+            sum2 = sum2 + array[i];
         }
         i++;
     }
+    return sum2;
+}
+
+int[] mas = CreateArray(12);
+Fill(mas);
+Print(mas);
+Console.WriteLine(SearchSumMinusNum(mas));
+Console.WriteLine(SearchSumPlusNum(mas));
