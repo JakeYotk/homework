@@ -38,3 +38,59 @@
 // Console.WriteLine(output);
 
 
+
+// $ - интерполяция.  Интерполяция строк-это механизм объединения
+//  двух или более строк вместе. В старых версиях C# мы использовали 
+//  оператор “+” или строку. Метод Format использовался для 
+//  конкатенации строк, но в C# 6.0 Microsoft предоставила
+//   функцию под названием String Interpolation для 
+//   конкатенации строк.
+
+
+
+
+
+
+
+// ЗАДАЧА С СЕМИНАРА НУЖНО ДОРЕШАТЬ!!! ОБЯЗАТЕЛЬНО!!!
+
+// Задать массив
+// Заполнить массив элементами
+// проверить условие
+// финал
+
+
+
+int[] CreateArray(int size)
+{
+    return new int[size];
+}
+
+
+void Fill(int[] array)
+{
+    int size = array.Length;
+    int i = 0;
+
+    while (i < size)
+    {
+        array[i] = (1, 10);
+        i++;
+    }
+}
+
+
+void Print(int[] array)
+{
+    int i = 0;
+    int size = array.Length;
+    while (i < size)
+    {
+        Console.Write(array[i] + " ");
+        i++;
+    }
+    Console.WriteLine();
+}
+
+
+

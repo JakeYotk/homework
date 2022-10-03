@@ -30,13 +30,13 @@ string Print(int[] array)
 }
 
 //4. 
-int Searhc(int[] array)
-{
-    int size = array.Length;
-    int count = 0;
-    for (int i = 0; i < size; i++)
-    {
-        if ( array[i] >= 10 && array[i] <= 99);
-    }
+// int Search(int[] array)
+// {
+//     int size = array.Length;
+//     int count = 0;
+//     for (int i = 0; i < size; i++)
+//     {
+//         if ( array[i] >= 10 && array[i] <= 99);
+//     }
     
-}
+// }
