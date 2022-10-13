@@ -10,26 +10,26 @@
 
 
 //1.
-int[] Create(int len)
-{
-    return new int[len];
-}
+// int[] Create(int len)
+// {
+//     return new int[len];
+// }
 
-//2.
-void Fill(int[] array, int min, int max)
-{
-    int size = array.Length;
-    for (int i = 0; i < size; i++);
-}
+// //2.
+// void Fill(int[] array, int min, int max)
+// {
+//     int size = array.Length;
+//     for (int i = 0; i < size; i++);
+// }
 
 
-//3.
-string Print(int[] array)
-{ 
-    return "[" + String.Join(',', array) + "]";
-}
+// //3.
+// string Print(int[] array)
+// { 
+//     return "[" + String.Join(',', array) + "]";
+// }
 
-//4. 
+// //4. 
 // int Search(int[] array)
 // {
 //     int size = array.Length;
