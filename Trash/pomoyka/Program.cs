@@ -61,36 +61,60 @@
 
 
 
-int[] CreateArray(int size)
+// int[] CreateArray(int size)
+// {
+//     return new int[size];
+// }
+
+
+// void Fill(int[] array)
+// {
+//     int size = array.Length;
+//     int i = 0;
+
+//     while (i < size)
+//     {
+//         array[i] = (1, 10);
+//         i++;
+//     }
+// }
+
+
+// void Print(int[] array)
+// {
+//     int i = 0;
+//     int size = array.Length;
+//     while (i < size)
+//     {
+//         Console.Write(array[i] + " ");
+//         i++;
+//     }
+//     Console.WriteLine();
+// }
+
+
+
+
+
+using System.Linq;
+
+
+string text = "(1,2) (2,3) (4,5) (6,7)"
+                .Replace("(", "")
+                .Replace(")", "")
+                ;
+Console.WriteLine(text);
+
+var data = text.Split(" ")
+                .Select(item => item.Split(','))
+                .Select(e => (int.Parse(e[0]), int.Parse(e[1])))
+                
+                .ToArray();
+
+for (int i = 0; i < data.Length; i++)
 {
-    return new int[size];
-}
-
-
-void Fill(int[] array)
-{
-    int size = array.Length;
-    int i = 0;
-
-    while (i < size)
-    {
-        array[i] = (1, 10);
-        i++;
-    }
-}
-
-
-void Print(int[] array)
-{
-    int i = 0;
-    int size = array.Length;
-    while (i < size)
-    {
-        Console.Write(array[i] + " ");
-        i++;
-    }
+    Console.WriteLine(data[i]);
     Console.WriteLine();
 }
-
 
 
